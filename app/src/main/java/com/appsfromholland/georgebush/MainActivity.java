@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Init dataset
-        this.dataset = GeorgeBushImageFactory.getInstance().getDataset();
+        this.dataset = GeorgeBushImageFactory.getInstance(this).getDataset();
 
         recyclerView = findViewById(R.id.gwbRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
